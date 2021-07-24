@@ -248,26 +248,26 @@ nav {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  min-width: 60%;
-  min-height: 80%;
+  min-width: 50%;
+  min-height: 50%;
 }
 
 #video-container .video-overlay {
   z-index: 9999;
   background: rgba(0,0,0,0.5);
-  width: 100%;
+  width: 60%;
 }
 
 #video-container .video-content {
   z-index: 99999;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 60%;
 }
 
 #video-container .video-content .inner {
-  height: 80%;
-  width: 80%;
+  height: 60%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,6 +292,7 @@ nav {
 #video-container .video-content .inner p {
   color: #fff;
   font-size: 18px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
   letter-spacing: 1.5px;
   text-align: center;
