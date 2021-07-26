@@ -261,7 +261,7 @@ nav {
 #video-container .video-content {
   z-index: 99999;
   position: absolute;
-  height: 100%;
+  height: 50%;
   width: 60%;
 }
 
