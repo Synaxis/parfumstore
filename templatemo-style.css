@@ -317,10 +317,11 @@ nav {
 
 
 .portfolio-item img {
-    border-radius: 20px;
+    border-radius: 5px;
 	display: inline-block;
 	width: auto;
-	height: 150px;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(9, 55, 53, 0.08), 0px 10px 16px rgba(9, 55, 53, 0.1), 0px 14px 22px rgba(9, 55, 53, 0.14);
+	height: 77px;
 	line-height: 150px;
   overflow: hidden;
 }
@@ -328,6 +329,8 @@ nav {
 .portfolio-item .thumb {
   position: relative;
 }
+
+
 
 
 .portfolio-item .hover-effect .hover-content {
