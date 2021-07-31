@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   		<title>MizaShow Products</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=200, height=500,  initial-scale=1.5">
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
@@ -12,8 +13,45 @@
         <link rel="stylesheet" href="css/templatemo-style.css">
         <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 <body>
+    <style>/* Style the navigation menu */
+body{
+    display:grid;
+    grid-template-rows: 100px 300px;
+    text-align:bottom;
+    font-family:Helvetica;
+    line-height: 0.0;
+}
+img .portfolio-item {
+  min-width: 300px;
+  display: grid;
+  grid-template-rows: repeat(4, 50px);
+  grid-auto-rows: 8px;    border-radius: 50px;
+  max-width: 75%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+  grid-template-rows: repeat(3, 50px);
+  grid-auto-flow: row;
+  background-color:#f06923;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  background-color:#34a6db;
+  border-radius: 50px;
+  width: auto;
+  line-height: 300px;
+  /* Should match your div height */
+  font-size: 0;
+  border: 0;
+  
+  video{max-width:100%; height:auto}
+
+}
+</style>
+
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
           <div class="navbar-header">
@@ -22,39 +60,37 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">MS Meu Negócio</a>
+            <a class="navbar-brand" href="index.html">Menu</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Inicio</a></li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#contact">Contato</a></li>
+                  <li><a href="perfumes.html">Perfumes</a></li>
+              <li><a href="sobre.html">QuemSomos</a></li>
+                <li><a href="produtos.html">Protudos</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Mais<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Perfumes</a></li>
-                  <li><a href="#">Cursos</a></li>
-                  <li><a href="#">Acessórios</a></li>
+                  <li><a href="perfumes.html">Perfumes</a></li>
+                  <li><a href="cursos.html">Cursos</a></li>
+                  <li><a href="produtos.html">Produtos</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Outra categoria</li>
                   <li><a href="#">Link separado</a></li>
-                  <li><a href="#">Outro link separado</a></li>
                 </ul>
               </li>
             </ul>
-      </nav>
+           </div> 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
       <script src="js/bootstrap.min.js"></script>
-    <h2 style="text-align:center; cursor: pointer;" onclick="window.location='https://lista.mercadolivre.com.br/_CustId_176774316';">MS Meu Negócio</h2>       <h4 style=text-align:center;>Produtos | Cursos</h4>
+    <h4 style="text-align:center; cursor: pointer;" onclick="window.location='https://lista.mercadolivre.com.br/_CustId_176774316';">MS Meu Negocio</h4>       <h5 style=text-align:center;>Produtos | Cursos</h5>
 
-    <div id="video-container">        
-        </div>
-        <video width="340" height="300" autoplay="" loop="" muted>
+        <video height="120" autoplay="" loop="" muted>
         	<source src="cut.webm" type="video/webm"/>
         </video>
-    </div>
+        <p></p>
                                         <div class="col-md-4 col-sm-6" style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1817757570-perfumes-importados-da-linha-antnio-bandeira-100-original-_JM#reco_item_pos=2&amp;reco_backend=machinalis-seller-items-pdp&amp;reco_backend_type=low_level&amp;reco_client=vip-seller_items-above&amp;reco_id=fc86d1f1-f2cc-4a51-afee-7192c420c393';">
                                             <div class="portfolio-item">
                                                 <a href="img/one.jpeg" data-lightbox="image-1"><div class="thumb">
@@ -69,6 +105,7 @@
                                                 </div></a>
                                             </div>
                                         </div>
+                                        <p></p>
                                         <div class="col-md-4 col-sm-6" style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1817757570-perfumes-importados-da-linha-antnio-bandeira-100-original-_JM#reco_item_pos=2&amp;reco_backend=machinalis-seller-items-pdp&amp;reco_backend_type=low_level&amp;reco_client=vip-seller_items-above&amp;reco_id=fc86d1f1-f2cc-4a51-afee-7192c420c393';">
                                             <div class="portfolio-item">
                                                 <a href="img/euphoria.jpg" data-lightbox="image-1"><div class="thumb">
@@ -255,20 +292,6 @@
                                         </div>
                                         <div class="col-md-4 col-sm-6" style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1817757570-perfumes-importados-da-linha-antnio-bandeira-100-original-_JM#reco_item_pos=2&amp;reco_backend=machinalis-seller-items-pdp&amp;reco_backend_type=low_level&amp;reco_client=vip-seller_items-above&amp;reco_id=fc86d1f1-f2cc-4a51-afee-7192c420c393';">
                                             <div class="portfolio-item">
-                                                <a href="img/barbecue.jpg" data-lightbox="image-1"><div class="thumb">
-                                                    <div class="hover-effect">
-                                                        <div class="hover-content">
-                                                            <p>Curso de <em>Barbecue Steaks</em></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="image">
-                                                        <img src="img/barbecue.jpg">
-                                                    </div>
-                                                </div></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6" style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1817757570-perfumes-importados-da-linha-antnio-bandeira-100-original-_JM#reco_item_pos=2&amp;reco_backend=machinalis-seller-items-pdp&amp;reco_backend_type=low_level&amp;reco_client=vip-seller_items-above&amp;reco_id=fc86d1f1-f2cc-4a51-afee-7192c420c393';">
-                                            <div class="portfolio-item">
                                                 <a href="img/deodorant.jpg" data-lightbox="image-1"><div class="thumb">
                                                     <div class="hover-effect">
                                                         <div class="hover-content">                                                            
@@ -314,7 +337,6 @@
                                                 <a href="img/casino.jpeg" data-lightbox="image-1"><div class="thumb">
                                                     <div class="hover-effect">
                                                         <div class="hover-content">
-                                                            <p>Adicionar <em>Titulo</em></p>
                                                             <p>Perfume Casino</p>
                                                         </div>
                                                     </div>
@@ -324,21 +346,6 @@
                                                 </div></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-sm-6" style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1817757570-perfumes-importados-da-linha-antnio-bandeira-100-original-_JM#reco_item_pos=2&amp;reco_backend=machinalis-seller-items-pdp&amp;reco_backend_type=low_level&amp;reco_client=vip-seller_items-above&amp;reco_id=fc86d1f1-f2cc-4a51-afee-7192c420c393';">
-                                            <div class="portfolio-item">
-                                                <a href="img/casino.jpeg" data-lightbox="image-1"><div class="thumb">
-                                                    <div class="hover-effect">
-                                                        <div class="hover-content">
-                                                            <p>Adicionar <em>Titulo</em></p>
-                                                            <p>Perfume Casino</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="image">
-                                                        <img src="img/casino.jpeg">
-                                                    </div>
-                                                </div></a>
-                                            </div>
-                                        </div>                            
                                 <footer>
                                     <div class="container-fluid">
                                         <div class="col-md-12">
@@ -346,117 +353,7 @@
                                         </div>
                                     </div>                                    
                                 </footer>
-                             
-                            
-                                <!-- Modal -->
-                                <div id="modal" class="modal">
-                                  <!-- Modal Content -->
-                                  <div class="modal-content">
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                      <h3 class="header-title">MizaShow<em>Products</em></h3>
-                                      <div class="close-btn"><img src="img/close_contact.png" alt=""></div>    
-                                    </div>
-                                    <!-- Modal Body -->
-                                    <div class="modal-body">
-                                      <div class="col-md-6 col-md-offset-3">
-                                        <form id="contact" action="" method="post">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                  <fieldset>
-                                                    <input name="name" type="text" class="form-control" id="name" placeholder="Seu nome..." required="">
-                                                  </fieldset>
-                                                </div>
-                                                <div class="col-md-12">
-                                                  <fieldset>
-                                                    <input name="email" type="email" class="form-control" id="email" placeholder="Seu Email..." required="">
-                                                  </fieldset>
-                                                </div>
-                                                <div class="col-md-12">
-                                                  <fieldset>
-                                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Sua mensagem..." required=""></textarea>
-                                                  </fieldset>
-                                                </div>
-                                                <div class="col-md-12">
-                                                  <fieldset>
-                                                    <button type="submit" id="form-submit" class="btn">Enviar!</button>
-                                                  </fieldset>
-                                                </div>
-                                            </div>
-                                        </form>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-  
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
-      <!-- Modal Content -->
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h3 class="header-title">Bem vindo ao Mizael's<em>Products</em></h3>
-          <div class="close-btn"><img src="img/close_contact.png" alt=""></div>    
-        </div>
-        <!-- Modal Body -->
-        <div class="modal-body">
-          <div class="col-md-6 col-md-offset-3">
-            <form id="contact" action="" method="post">
-                <div class="row">
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input name="name" type="text" class="form-control" id="name" placeholder="Seu nome..." required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input name="email" type="email" class="form-control" id="email" placeholder="Seu Email..." required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Sua mensagem..." required=""></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="btn">Enviar!</button>
-                      </fieldset>
-                    </div>
-                </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>    
-
-    <section class="overlay-menu">
-      <div class="container">
-        <div class="row">
-          <div class="main-menu">
-              <ul>
-                  <li>
-                      <a href="index.html">Início</a>
-                  </li>
-                  <li>
-                      <a href="grid.html">Lista pequenas</a>
-                  </li>
-                  <li>
-                      <a href="about.html">Sobre</a>
-                  </li>
-                  <li>
-                      <a href="blog.html">Cursos</a>
-                  </li>
-                  <li>
-                      <a href="single-post.html">Post</a>
-                  </li>
-              </ul>
-              <p>Perfumes.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
