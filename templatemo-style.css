@@ -13,8 +13,19 @@ body {
 @media (min-width: 100px) {
 
   img {
-      
-    grid-gap: 5px;   
+    transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #333;
+    transition: all 1.5s ease;
+    min-width: 10em;
+    max-width: 100%;
+    display: block;
+    background: #ddd;
+    border: 1px solid #ccc;
+    grid-gap: 1px;   
     display: grid;
     max-width: 60%;
     box-shadow: 0 0 16px #333;
@@ -36,6 +47,7 @@ body {
  /* Desktop mode */
 @media (max-width: 700px) {
   .portfolio-item img {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     border-radius: 5px;
     width: auto;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(9, 55, 53, 0.08), 0px 10px 16px rgba(9, 55, 53, 0.1), 0px 14px 22px rgba(9, 55, 53, 0.14);
