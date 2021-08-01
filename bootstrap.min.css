@@ -8,10 +8,26 @@
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+body {
+    margin: 0;
+}
+ul {
+   list-style: none;
+}
+
+ul li:before {
+   content: "";
+   font-size: 300%; /* or whatever */
+   padding-right: 0;
+   border-radius: 3px;
+   
+}
+
+
 
 @media screen and (max-width: 800px) {
-    html {
-        zoom:200%;
+    .container {
+        width:900px;
     }
   }
   
@@ -22,8 +38,21 @@
       max-width: 100%;
     }
   }
-body {
-    margin: 0;
+  
+  @media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (max-width: 360px) {
+    .container {
+        width: 470px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }
 article,
 aside,
@@ -91,16 +120,62 @@ sup {
     line-height: 0;
     vertical-align: baseline;
 }
+.scroll-link {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mouse {
+  max-width: 2.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.scroll {
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+  animation-iteration-count: infinite;
+  transform-origin: 50% 20.5px;
+  will-change: transform;
+}
+
+@keyframes scroll {
+  0%, 20% {
+  transform: translateY(0) scaleY(1);
+  }
+}
 sup {
     top: -0.5em;
 }
 sub {
     bottom: -0.25em;
 }
+
+@media (min-width: 100px) {
+  img { 
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+
+  grid-gap: 5px;      
+  }
+}
+
+@media (min-width: 100px) {
+
 img {
+  grid-template-columns:fr;
+  grid-template-rows: auto auto auto;
+
+  grid-gap: 5px;   
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 50px);
+        grid-template-rows: repeat(4, 50px);
+        max-width: 60%;
+        border-radius: 4px;
+        box-shadow: 0 0 16px #333;
+        transition: all 1.5s ease;
+  grid-template-rows: repeat(3, 50px);
   grid-auto-flow: row;
   background-color:#f06923;
   color: #fff;
@@ -108,13 +183,16 @@ img {
   text-align: center;
   background-color:#34a6db;
     border-radius: 50px;
-	display: inline-block;
 	width: auto;
 	line-height: 300px;
 	/* Should match your div height */
-	text-align: center;
 	font-size: 0;
     border: 0;
+}
+}
+
+img:hover {
+        box-shadow: 0 0 32px #333;
 }
 svg:not(:root) {
     overflow: hidden;
@@ -1418,21 +1496,7 @@ pre code {
     margin-right: auto;
     margin-left: auto;
 }
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-@media (min-width: 360px) {
-    .container {
-        width: 470px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
+
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
